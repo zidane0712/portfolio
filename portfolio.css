@@ -1,0 +1,382 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	border: 1px solid red;*/
+}
+
+/*
+	font-family: 'Anton', sans-serif;
+	font-family: 'Lilita One', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
+*/
+
+body {
+	background-color: #2D2D2A;
+}
+
+#full-container {
+	margin-inline: 8%;
+	margin-block: 3%;
+}
+
+/* Navbar CSS */
+#navbar-logo {
+	width: 4rem;
+	height: auto;
+}
+
+.nav-link {
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+}
+
+.nav-item {
+	margin-inline: 10px;
+}
+
+a, a::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #A30000 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+a::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "EPIC";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+a:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+ color: #A6FF00;
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
+/* Landing Page */
+#landing-page {
+	min-height: 100vh;
+	background-image: url('images/hello-image.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	animation: change 10s infinite steps(1);
+}
+
+@keyframes change {
+	15% {
+		background-image: url('images/collaborate-image.png');
+	}
+	35% {
+		background-image: url('images/ideas-image1.png');
+	}
+	40% {
+		background-image: url('images/ideas-image2.png');
+	}
+	45% {
+		background-image: url('images/ideas-image3.png');
+	}
+	50% {
+		background-image: url('images/ideas-image4.png');
+	}
+	65% {
+		background-image: url('images/reality-image3.png');
+	}
+	80% {
+		background-image: url('images/contact-image.png');
+	}
+	100% {
+		background-image: url('images/logo.png');
+	}
+	0% {
+		background-image: url('images/hello-image.png');
+	}
+}
+
+
+
+/* About Me */
+#about-me {
+	min-height: 100vh;
+	min-width: auto;
+}
+
+.info-header {
+	font-family: 'Anton', sans-serif;
+	color: #A6FF00;
+}
+
+#info-content {
+	font-family: 'Montserrat', sans-serif;
+	color: #E8E1EF;
+	font-size: .9rem;
+}
+
+.typewriter {
+	font-family: 'Anton', sans-serif;
+}
+
+.border-right {
+	border-style: solid;
+}
+
+#about-name {
+	font-family: 'Montserrat', sans-serif;
+	color: #E8E1EF;
+	font-size: 3.5rem;
+}	
+
+@media (max-width: 768px) {
+	#about-name {
+		font-family: 'Montserrat', sans-serif;
+		color: #E8E1EF;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+@media (max-width: 992px) {
+	#about-name {
+		font-family: 'Montserrat', sans-serif;
+		color: #E8E1EF;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+.info-header {
+	font-family: 'Anton', sans-serif;
+	color: #A6FF00;
+	font-size: 3.5rem;
+}	
+
+@media (max-width: 768px) {
+	.info-header {
+		font-family: 'Anton', sans-serif;
+		color: #A6FF00;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+@media (max-width: 992px) {
+	.info-header {
+		font-family: 'Anton', sans-serif;
+		color: #A6FF00;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+.typewriter {
+	font-family: 'Poppins', sans-serif;
+	color: #A6FF00;
+	font-size: 4rem;
+}	
+
+@media (max-width: 768px) {
+	.typewriter {
+		font-family: 'Poppins', sans-serif;
+		color: #A6FF00;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+@media (max-width: 992px) {
+	.typewriter {
+		font-family: 'Poppins', sans-serif;
+		color: #A6FF00;
+		font-size: 2rem;
+		text-align: center;
+	}	
+}
+
+#connect-button {
+	width: 40%;
+}
+
+@media (max-width: 768px) {
+	#connect-button {
+		display: none;
+	}	
+}
+
+@media (max-width: 992px) {
+	#connect-button {
+		display: none;
+	}
+}
+
+/* Services CSS */
+#services {
+	min-height: 100vh;
+	margin-top: 100px;
+}
+
+#services-header {
+	font-family: 'Anton', sans-serif;
+	color: #2D2D2A;
+	text-align: center;
+	font-size: 5rem;
+	background-color: #A6FF00;
+}
+
+#sc-container {
+
+}
+
+#services-content-header {
+	font-family: 'Anton', sans-serif;
+	color: #E8E1EF;
+	text-align: center;
+	background-color: #A30000;
+	font-size: 1.3rem;
+}
+
+#sc-content {
+	font-family: 'Montserrat', sans-serif;
+	color: #E8E1EF;
+	font-size: .8rem;
+}
+
+
+/* Tools CSS */
+#tools-header {
+	font-family: 'Anton', sans-serif;
+	color: #E8E1EF;
+	text-align: center;
+	background-color: #A30000;
+	font-size: 1.3rem;
+}
+
+
+/* Contact Me CSS */
+#staticBackdrop {
+	min-width: 80vh;
+	background-color: RGBA(163, 0, 0,.8);
+}
+
+.modal-content {
+	background-color: RGBA(163, 0, 0, .8);
+}
+
+.modal-title {
+	font-family: 'Anton', sans-serif;
+	font-size: 3rem;
+	color: #E8E1EF;
+}
+
+#exit_button {
+	color: #E8E1EF;
+}
+
+#connect-intro {
+	font-family: 'Montserrat', sans-serif;
+	font-size: .7rem;
+	color: #E8E1EF;
+}
+
+#submit_button {
+	background-color: #2D2D2A;
+}
+
+/* Footer */
+#footer_content {
+	background-color: #A30000;
+	max-width: 100vw;
+	color: #E8E1EF;
+}
+
+#epic_expertise {
+	margin-inline: 8%;
+	margin-top: 3%;
+}
+
+#epic-container {
+	margin-top: 5%;
+}
+
+#epic-header {
+	font-family: 'Anton', sans-serif;
+	margin-block: 8%;
+}
